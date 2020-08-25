@@ -75,27 +75,27 @@ export const footerData = {
     {
       id: nanoid(),
       name: 'twitter',
-      url: ''
+      url: 'https://twitter.com/_ThElias'
     },
     {
       id: nanoid(),
       name: 'codepen',
-      url: ''
+      url: 'https://codepen.io/Tholhue'
     },
     {
       id: nanoid(),
       name: 'linkedin',
-      url: ''
+      url: 'https://www.linkedin.com/in/toluwalase-akande'
     },
     {
       id: nanoid(),
       name: 'github',
-      url: ''
+      url: 'https://github.com/TheHelias'
     }
   ]
 }
 
 // Github start/fork buttons
 export const githubButtons = {
-  isEnabled: true // set to false to disable the GitHub stars/fork buttons
+  isEnabled: false // set to false to disable the GitHub stars/fork buttons
 }

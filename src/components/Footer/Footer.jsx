@@ -19,6 +19,7 @@ const Footer = () => {
             <i className='fa fa-angle-up fa-2x' aria-hidden='true' />
           </Link>
         </span>
+        <p>Yo, check me out on these platforms, I will be waiting</p>
         <div className='social-links'>
           {networks &&
             networks.map((network) => {
@@ -36,14 +37,7 @@ const Footer = () => {
               )
             })}
         </div>
-        <hr />
-        <p className='footer__text'>
-          © {new Date().getFullYear()} - Template developed by{' '}
-          <a href='https://github.com/cobidev' target='_blank' rel='noopener noreferrer'>
-            Jacobo Martínez
-          </a>
-        </p>
-
+        {/* © {new Date().getFullYear()} - Template developed by{' '} */}
         {isEnabled && <GithubButtons />}
       </Container>
     </footer>
