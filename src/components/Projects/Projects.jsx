@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import Fade from 'react-reveal/Fade'
 import Tilt from 'react-tilt'
 import { Container, Row, Col } from 'react-bootstrap'
+
 import PortfolioContext from '../../context/context'
 import Title from '../Title/Title'
 import ProjectImg from '../Image/ProjectImg'
@@ -23,10 +24,10 @@ const Projects = () => {
   }, [])
 
   return (
-    <section id="projects">
+    <section id='projects'>
       <Container>
-        <div className="project-wrapper">
-          <Title title="Projects" />
+        <div className='project-wrapper'>
+          <Title title='Portfolio' />
           {projects.map((project) => {
             const { title, info, info2, url, repo, img, id } = project
 
@@ -38,21 +39,20 @@ const Projects = () => {
                     bottom={isMobile}
                     duration={1000}
                     delay={500}
-                    distance="30px"
+                    distance='30px'
                   >
-                    <div className="project-wrapper__text">
-                      <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
+                    <div className='project-wrapper__text'>
+                      <h3 className='project-wrapper__text-title'>{title}</h3>
                       <div>
                         <p>
-                          {info ||
-                            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                          {info}
                         </p>
-                        <p className="mb-4">{info2 || ''}</p>
+                        <p className='mb-4'>{info2 || ''}</p>
                       </div>
                       <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='cta-btn cta-btn--hero'
                         href={url || '#!'}
                       >
                         See Live
@@ -60,9 +60,9 @@ const Projects = () => {
 
                       {repo && (
                         <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          className='cta-btn text-color-main'
                           href={repo}
                         >
                           Source Code
@@ -77,14 +77,14 @@ const Projects = () => {
                     bottom={isMobile}
                     duration={1000}
                     delay={1000}
-                    distance="30px"
+                    distance='30px'
                   >
-                    <div className="project-wrapper__image">
+                    <div className='project-wrapper__image'>
                       <a
                         href={url || '#!'}
-                        target="_blank"
-                        aria-label="Project Link"
-                        rel="noopener noreferrer"
+                        target='_blank'
+                        aria-label='Project Link'
+                        rel='noopener noreferrer'
                       >
                         <Tilt
                           options={{
@@ -96,10 +96,10 @@ const Projects = () => {
                             transition: true,
                             axis: null,
                             reset: true,
-                            easing: 'cubic-bezier(.03,.98,.52,.99)',
+                            easing: 'cubic-bezier(.03,.98,.52,.99)'
                           }}
                         >
-                          <div data-tilt className="thumbnail rounded">
+                          <div data-tilt className='thumbnail rounded'>
                             <ProjectImg alt={title} filename={img} />
                           </div>
                         </Tilt>
@@ -110,6 +110,13 @@ const Projects = () => {
               </Row>
             )
           })}
+          <a
+            target='_blank'
+            rel='noopener noreferrer'
+            className='cta-btn text-color-main'
+            href='https://github.com/TheHelias'
+          >Check out my GitHub to see more
+          </a>
         </div>
       </Container>
     </section>
