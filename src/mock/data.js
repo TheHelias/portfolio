@@ -43,30 +43,37 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    img: 'project_tp.png',
+    title: 'Modern Brand Website',
+    info: 'A modern brand website built using React and Chakra UI',
     info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio' // if no repo, the button will not show up
+    url: 'https://sleepy-fermi-4f2686.netlify.app/'
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio' // if no repo, the button will not show up
+    img: 'project_ma.png',
+    title: 'Filmmaking Portfolio Website and Blog',
+    info: 'A filmmaking portfolio website and blog built using React, Gatsby, Bulma etc',
+    info2: 'Check out the source code for more info',
+    url: 'https://martiniakande.com/',
+    repo: 'https://github.com/TheHelias/signor-martini-portfolio' // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    img: 'project_pc.png',
+    title: 'Promise Cup Website',
+    info: 'A brand website built using Wordpress, CSS and jQuery',
     info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio' // if no repo, the button will not show up
+    url: 'https://promisecup.com/'
+  },
+  {
+    id: nanoid(),
+    img: 'project_tc.png',
+    title: 'An event registering platform',
+    info: 'A simple CRUD app demonstrating CRUD.',
+    info2: 'Built using NodeJs(Express) and React',
+    url: 'https://talk-conference-app.herokuapp.com/',
+    repo: 'https://github.com/TheHelias/conference-talk-app' // if no repo, the button will not show up
   }
 ]
 
@@ -99,6 +106,16 @@ export const footerData = {
       id: nanoid(),
       name: 'github',
       url: 'https://github.com/TheHelias'
+    },
+    {
+      id: nanoid(),
+      name: 'whatsapp',
+      url: 'https://wa.link/mossy5'
+    },
+    {
+      id: nanoid(),
+      name: 'envelope',
+      url: 'mailto:akandetoluwalase@gmail.com'
     }
   ]
 }
