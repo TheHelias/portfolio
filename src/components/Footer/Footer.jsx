@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { Container } from 'react-bootstrap'
 import { Link } from 'react-scroll'
+
 import PortfolioContext from '../../context/context'
 import GithubButtons from '../GithubButtons/GithubButtons'
 
@@ -19,7 +20,7 @@ const Footer = () => {
             <i className='fa fa-angle-up fa-2x' aria-hidden='true' />
           </Link>
         </span>
-        <p>Yo, check me out on these platforms, I will be waiting</p>
+        {/* <p></p> */}
         <div className='social-links'>
           {networks &&
             networks.map((network) => {
@@ -37,7 +38,7 @@ const Footer = () => {
               )
             })}
         </div>
-        {/* © {new Date().getFullYear()} - Template developed by{' '} */}
+        © Toluwalase Akande {new Date().getFullYear()}
         {isEnabled && <GithubButtons />}
       </Container>
     </footer>
