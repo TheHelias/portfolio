@@ -6,7 +6,7 @@ import Title from '../Title/Title'
 
 const Contact = () => {
   const { contact } = useContext(PortfolioContext)
-  const { cta } = contact
+  const { cta, btn, link } = contact
 
   return (
     <section id='contact'>
@@ -21,9 +21,9 @@ const Contact = () => {
               target='_blank'
               rel='noopener noreferrer'
               className='cta-btn cta-btn--resume'
-              href='https://wa.me/+2348166746401'
+              href={link}
             >
-              Let's Talk
+              {btn}
             </a>
           </div>
         </Fade>
