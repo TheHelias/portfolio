@@ -12,7 +12,8 @@ export const heroData = {
   title: 'Hi, I\'m',
   name: 'Elias Akande',
   subtitle: 'I am a Full-stack Engineer',
-  cta: 'Details?'
+  aboutCta: 'Details?',
+  portfolioCta: 'Portfolio?'
 }
 
 // ABOUT DATA

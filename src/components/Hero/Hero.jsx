@@ -7,7 +7,7 @@ import AboutImg from '../Image/AboutImg'
 
 const Header = () => {
   const { hero, about } = useContext(PortfolioContext)
-  const { title, name, subtitle, cta } = hero
+  const { title, name, subtitle, aboutCta, portfolioCta } = hero
   const { img } = about
 
   const [isDesktop, setIsDesktop] = useState(false)
@@ -46,15 +46,24 @@ const Header = () => {
                 {subtitle}
               </h1>
             </Fade>
-            <Fade left={isDesktop} bottom={isMobile} duration={400} delay={0} distance='30px'>
-              <p className='hero-cta'>
-                <span className='cta-btn cta-btn--hero'>
-                  <Link to='about' smooth duration={1000}>
-                    {cta}
-                  </Link>
-                </span>
-              </p>
-            </Fade>
+            <div style={{ display: 'flex' }}>
+              <Fade bottom={isMobile} duration={400} delay={0} distance='30px'>
+                <p className='hero-cta'>
+                  <span className='cta-btn cta-btn--hero'>
+                    <Link to='about' smooth duration={1000}>
+                      {aboutCta}
+                    </Link>
+                  </span>
+                </p>
+                <p className='hero-cta'>
+                  <span className='cta-btn cta-btn--hero'>
+                    <Link to='projects' smooth duration={1000}>
+                      {portfolioCta}
+                    </Link>
+                  </span>
+                </p>
+              </Fade>
+            </div>
           </Col>
         </Row>
       </Container>
