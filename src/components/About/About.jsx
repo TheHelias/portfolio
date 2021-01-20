@@ -3,12 +3,11 @@ import Fade from 'react-reveal/Fade'
 import { Container, Row, Col } from 'react-bootstrap'
 
 import Title from '../Title/Title'
-import AboutImg from '../Image/AboutImg'
 import PortfolioContext from '../../context/context'
 
 const About = () => {
   const { about } = useContext(PortfolioContext)
-  const { img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, resume } = about
+  const { paragraphOne, paragraphTwo, paragraphThree, paragraphFour, resume } = about
 
   const [isDesktop, setIsDesktop] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
@@ -28,15 +27,8 @@ const About = () => {
       <Container>
         <Title title='About Me' />
         <Row className='about-wrapper'>
-          <Col md={6} sm={12}>
-            <Fade bottom duration={1000} delay={600} distance='30px'>
-              <div className='about-wrapper__image'>
-                <AboutImg alt='profile picture' filename={img} />
-              </div>
-            </Fade>
-          </Col>
-          <Col md={6} sm={12}>
-            <Fade left={isDesktop} bottom={isMobile} duration={400} delay={400} distance='30px'>
+          <Col md={12} sm={12}>
+            <Fade left={isDesktop} bottom={isMobile} duration={400} delay={0} distance='30px'>
               <div className='about-wrapper__info'>
                 <p className='about-wrapper__info-text'>
                   {paragraphOne}

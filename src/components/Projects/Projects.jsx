@@ -38,7 +38,7 @@ const Projects = () => {
                     left={isDesktop}
                     bottom={isMobile}
                     duration={400}
-                    delay={400}
+                    delay={0}
                     distance='30px'
                   >
                     <div className='project-wrapper__text'>
@@ -76,7 +76,7 @@ const Projects = () => {
                     right={isDesktop}
                     bottom={isMobile}
                     duration={400}
-                    delay={400}
+                    delay={0}
                     distance='30px'
                   >
                     <div className='project-wrapper__image'>
