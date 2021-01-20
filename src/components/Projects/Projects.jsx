@@ -37,8 +37,8 @@ const Projects = () => {
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
-                    duration={1000}
-                    delay={500}
+                    duration={400}
+                    delay={400}
                     distance='30px'
                   >
                     <div className='project-wrapper__text'>
@@ -47,13 +47,13 @@ const Projects = () => {
                         <p>
                           {info}
                         </p>
-                        <p className='mb-4'>{info2 || ''}</p>
+                        <p className='mb-4'>{info2}</p>
                       </div>
                       <a
                         target='_blank'
                         rel='noopener noreferrer'
                         className='cta-btn cta-btn--hero'
-                        href={url || '#!'}
+                        href={url}
                       >
                         See Live
                       </a>
@@ -75,13 +75,13 @@ const Projects = () => {
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
-                    duration={1000}
-                    delay={1000}
+                    duration={400}
+                    delay={400}
                     distance='30px'
                   >
                     <div className='project-wrapper__image'>
                       <a
-                        href={url || '#!'}
+                        href={url}
                         target='_blank'
                         aria-label='Project Link'
                         rel='noopener noreferrer'
