@@ -59,4 +59,10 @@
       }
     }
   }
+
+  .gatsby-image-wrapper{
+    @include respond(phone){
+      max-height: 350px;
+    }
+  }
 }
