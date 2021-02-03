@@ -15,7 +15,6 @@
       color: darken(white, 50%);
       font-size: 1.3rem;
       transition: all 0.4s;
-      display: inline-block;
       background-color: $brown;
 
       &:hover,
@@ -54,6 +53,10 @@
 
     &:hover {
       transform: translateY(-2px);
+    }
+
+    @include respond(phone) {
+      font-size: 2rem;
     }
   }
 }
