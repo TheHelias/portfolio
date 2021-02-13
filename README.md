@@ -3,7 +3,6 @@
 ## Techs
 
 ⚡️ Gatsby
-⚡️ GraphQL
 ⚡️ React Bootstrap
 ⚡️ SCSS
 

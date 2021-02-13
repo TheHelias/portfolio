@@ -20,24 +20,26 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.jpg',
   paragraphOne: `
-  I am a Full-stack engineer with 3 years of professional experience building web applications. `,
-  paragraphTwo: `I consistently use React and some of its frameworks like Next and Gatsby for frontend
-   development and NodeJs with express for backend development. I constantly use various databases like
-    MongoDB, Postgresql, and Firestore. I am good with the agile method of software development with
-     good experience using Trello and pivotal tracker amongst others.`,
-  paragraphThree: `I am also a big fan of testing and collaborating using version control tools.
-   I have good knowledge and experience using Netlify, Vercel, and Heroku amongst others for
-    deploying applications. Of course, I use many other tools asides from the aforementioned
-     which can't be contained here and I easily pick up new ones daily. I enjoy
-      creating, learning and always love a good challenge.`,
-  paragraphFour: `In 2017, I co-founded 
-  a peer-to-peer learning community for developers where I functioned as a hands-on tutor. From there, 
-  I went on to working various freelance and contract jobs with the notable one being Servicemart 
-  - a startup where I worked as a Fullstack Engineer in a team of 3 to build their service
-   listing and hiring platform. Later on, I went on to work at EpowerNg - a Web and App agency
-    where I functioned as the Frontend Engineer for 9 months. I worked on many challenging and
-     interesting projects there with the company’s clients. I currently work freelance and 
-     I am very open to full-time opportunities.`,
+  I am a Full-stack engineer with 3 years of professional experience in the software industry. `,
+  paragraphTwo: `I use React and its frameworks like Next and Gatsby for frontend development
+   and NodeJs with express for backend development. Most of the time I work with databases like
+    MongoDB, MySQL, and, Postgresql. I am a big fan of writing tests which I achieve using Mocha,
+     Chai, and Jest with automated testing using Circle CI or GitHub actions.`,
+  paragraphThree: `I collaborate often with other developers and teams using git for version 
+  control and collaboration tools like Trello, Jira, and pivotal tracker amongst others. I am 
+  currently fascinated with AWS and its endless possibilities which I am exploring. You can
+   check out my resume just below this section to see more about my skillset and background.
+    Also, you can find links to my LinkedIn and GitHub in the footer of this page.`,
+  paragraphFour: `I have worked with various companies and individuals on both contract
+   and full-time roles. Most recently, I worked full-time at EpowerNG; a web and app agency 
+   as a Frontend Engineer for about 9 months. Throughout my time there, I was able to work 
+   on many challenging and interesting projects where I built the frontend of web applications
+    and integrated them with APIs as needed. Before that, I worked as a full-stack engineer at
+     ServiceMart; a startup for a service listing platform. I also co-founded PioCode; a 
+     peer-to-peer learning community for budding developers from non-tech backgrounds. 
+      I currently work freelance but I am open to full-time opportunities. You can check 
+      out more about my work experience and history in my resume below or check out my 
+      LinkedIn for something more comprehensive.`,
   resume: 'https://drive.google.com/folderview?id=1ineTWoZuET578hGs-tqaqoayoboyKM_n'
 }
 
